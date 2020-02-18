@@ -8,5 +8,10 @@
             <input type="text" placeholder="Enter your text..">
             <input type="submit">
         </form>
+        <div>
+            {% for var in data %}
+                <li>{{ var }}</li>
+            {% endfor %}
+        </div>
     </body>
 </html>

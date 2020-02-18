@@ -17,10 +17,12 @@ def get_sentiment(text):
         else:
             return "This sentence is negative." # -0.3
 
+data = [12,13,14,14,13,11]
+
 app = Flask(__name__)
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html", data = data)
 
 if __name__ == "__main__":
     app.run(debug = True)
